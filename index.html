@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/accordion.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <img class="leftBort" src="img/leftBort.svg" alt="leftBort" />
+        <img class="rightBort" src="img/rightBort.svg" alt="rightBort" />
+        <a href="#"><img class="logo" src="img/logo.svg" alt="logo" /></a>
+      </header>
+      <main class="main">
+        <div class="main__title">Under Construction</div>
+        <p class="main__description">
+          We're making lots of improvements and will be back soon
+        </p>
+        <div class="timer">
+          <div class="timer__body">
+            <div id="day" class="timer__number">00</div>
+            <div class="timer__number">:</div>
+            <div id="hour" class="timer__number">00</div>
+            <div class="timer__number">:</div>
+            <div id="minute" class="timer__number">00</div>
+            <div class="timer__number">:</div>
+            <div id="second" class="timer__number">00</div>
+          </div>
+          <div class="timer__description desktop">
+            <img class="timer__img" src="img/day.svg" alt="day" />
+            <img class="timer__img" src="img/hour.svg" alt="hour" />
+            <img class="timer__img" src="img/minute.svg" alt="minute" />
+            <img class="timer__img" src="img/second.svg" alt="second" />
+          </div>
+          <div class="timer__description mobile">
+            <img class="timer__img" src="img/day-mobile.svg" alt="day" />
+            <img class="timer__img" src="img/hour-mobile.svg" alt="hour" />
+            <img class="timer__img" src="img/minute-mobile.svg" alt="minute" />
+            <img class="timer__img" src="img/second-mobile.svg" alt="second" />
+          </div>
+        </div>
+        <p class="animation">Check our event page when you wait:</p>
+        <a
+          href="https://egorovagency.by/#main"
+          target="_blank"
+          class="main__btn"
+        >
+          <div href="">Go to the event</div>
+          <svg width="20" height="20">
+            <use xlink:href="img/icon/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </main>
+      <footer class="footer">
+        <div class="scroll__btn hidden">
+          <div>Other Events</div>
+          <svg width="20" height="20">
+            <use xlink:href="img/icon/sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+        <form id="form" action="#" method="POST" class="form">
+          <input
+            class="form__input"
+            placeholder="Enter your Email and get notified"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+          <button id="form__btn" class="form__arrow" type="submit">
+            <svg width="20" height="20">
+              <use xlink:href="img/icon/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </form>
+        <a href="#events" class="scroll__btn">
+          <div>Other Events</div>
+          <svg width="20" height="20">
+            <use xlink:href="img/icon/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </footer>
+      <section class="section__events">
+        <h2 id="events" class=" events__title">All events</h2>
+
+        <div class="accordion">
+          <div
+            class="slide active"
+            style="background-image: url('./img/people.png')"
+          >
+            <div class="slide__line">
+              <h3 class="line__header">Hawaiian party</h3>
+              <span class="line__number">01</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">01</div>
+              <div class="info__header">Hawaiian party</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">Мafia party</h3>
+              <span class="line__number">02</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">02</div>
+              <div class="info__header">Мafia party</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">Party</h3>
+              <span class="line__number">03</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">03</div>
+              <div class="info__header">Party</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">Party on the beach</h3>
+              <span class="line__number">04</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">04</div>
+              <div class="info__header">Party on the beach</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">Home Security</h3>
+              <span class="line__number">05</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">05</div>
+              <div class="info__header">Home Security</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">Network Design & Implementation</h3>
+              <span class="line__number">06</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">06</div>
+              <div class="info__header">Network Design & Implementation</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">System Design & Engineering</h3>
+              <span class="line__number">07</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">07</div>
+              <div class="info__header">System Design & Engineering</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('./img/people.png')">
+            <div class="slide__line">
+              <h3 class="line__header">Client Care Plans</h3>
+              <span class="line__number">08</span>
+            </div>
+            <div class="slide__info">
+              <div class="info__number">08</div>
+              <div class="info__header">Client Care Plans</div>
+              <span class="info__date">13.02.2023</span>
+              <a
+                class="info__link"
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                >More information</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <a class="popup__close"
+              ><svg width="25" height="25">
+                <use xlink:href="img/icon/sprite.svg#close"></use>
+              </svg>
+            </a>
+            <div class="popup__title"></div>
+            <div class="popup__text"></div>
+            <button class="popup__btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
